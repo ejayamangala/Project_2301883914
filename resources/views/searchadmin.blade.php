@@ -11,7 +11,7 @@
                 <input type="text" name="search_query" class="form-control">
             </div>
 
-            <button type="submit" class="btn btn-primary col-2">Search</button>
+            <button type="submit" class="btn btn-primary col-2 bg-dark">Search</button>
         </div>
     </form>
 </div>

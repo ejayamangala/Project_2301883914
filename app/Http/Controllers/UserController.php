@@ -25,6 +25,7 @@ class UserController extends Controller
 
     }
 
+
     /**
      * Show the form for creating a new resource.
      *
@@ -86,11 +87,13 @@ class UserController extends Controller
     public function show(User $user)
     {
         //
-        // return view('detailprofil')->with('user', auth()->user());
+
         if(Auth::user()->role == 'admin'){
-            return view('detailprofil' ,[
+            return view('detailprofiladmin' ,[
                 'user' =>$user]
             );
+        }elseif(Auth::user()->role == ""){
+            return view('detailprofil')->with('user', auth()->user());
         }
     }
 
@@ -107,11 +110,14 @@ class UserController extends Controller
     public function edit(User $user)
     {
         //
-        // return view('updateprofil')->with('user', auth()->user());
+
         $data['title'] = 'Update Profil';
         $data['user'] = $user;
         if(Auth::user()->role == 'admin'){
-            return view('updateprofil', $data );
+            return view('updateprofiladmin', $data );
+        }
+        elseif(Auth::user()->role == ""){
+            return view('updateprofil')->with('user', auth()->user());
         }
     }
 

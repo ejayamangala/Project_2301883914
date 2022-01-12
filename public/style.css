@@ -28,8 +28,13 @@
     color: white !important;
 }
 
+
 .row{
     justify-content: center;
+}
+
+.but{
+    margin-left: 6.5cm;
 }
 
 .register-form
@@ -67,51 +72,7 @@
     border-top-right-radius: 0;
 }
 
-/* .banner{
-    height: 100vh;
-    width: 100%;
-    background: url('banner.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-}
 
- .info{
-    margin-top: 3cm;
-    margin-bottom: 3cm;
-    background-color: grey;
-}
-
-.sk{
-    color: white;
-    margin-bottom: 1cm;
-    font-size: 2.5cm;
-}
-.jn{
-    color: red;
-}
-
-.rm{
-    margin-left: 38%;
-    color: white;
-    background-color: red;
-    margin-bottom: 0.5cm;
-}
-
-.h3 {
-    padding-top: 2cm;
-    padding-bottom: 1cm;
-    font-size: 1.5cm;
-    color:white !important;
-    text-shadow: 2px -2px 30px dodgerblue;
-
-}
-
-.d-block{
-    color: white;
-    font-size: 0.5cm;
-} */
 
 .container {
     margin-top: 0.5cm;
